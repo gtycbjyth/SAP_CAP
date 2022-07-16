@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.git": true,
+    "**/.vscode": true
+},
+"sqltools.connections": [
+    {
+        "dialect": "SQLite",
+        "database": "/home/user/projects/shop/shop.db",
+        "name": "My Shop SQLite"
+    }
+]
+}

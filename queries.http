@@ -1,0 +1,16 @@
+GET http://localhost:4004/catalog/Author
+
+###
+GET HTTP://LOCALHOST:4004/catalog/Books
+
+###
+POST  HTTP://LOCALHOST:4004/catalog/Books
+Content-Type: application/json
+
+{"ID": 10, "title": "THIS IS MY BOOK"}
+
+###
+POST  HTTP://LOCALHOST:4004/catalog/Orders
+Content-Type: application/json
+
+{"ID": "f4683950-f77c-4411-968d-2bae5c8b69aa", "book_ID": 421, "quintyti": 10}

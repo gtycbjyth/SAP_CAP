@@ -1,0 +1,24 @@
+GET http://localhost:4004/catalog/Authors
+
+### ?$expand=books added array of books with this autor
+GET http://localhost:4004/catalog/Authors?$expand=books
+
+### ?$expand=books added autor
+GET http://localhost:4004/catalog/Books?$expand=author
+
+###
+POST http://localhost:4004/catalog/Authors
+Content-Type: application/json
+
+{"ID": 413, "name": "Koval Try"}
+
+###
+GET http://localhost:4004/catalog/Books
+
+###
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{"ID": 913, "title": "TypeScript", "stock": 13, "author_ID": 413}
+
+###
