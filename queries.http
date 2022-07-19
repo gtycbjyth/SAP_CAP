@@ -4,12 +4,12 @@ GET http://localhost:4004/catalog/Author
 GET HTTP://LOCALHOST:4004/catalog/Books
 
 ###
-POST  HTTP://LOCALHOST:4004/catalog/Books
+POST  HTTP://LOCALHOST:4004/library/Books
 Content-Type: application/json
 
 {
     "title": "THIS IS MY BOOK",
-    "author": { "ID":"436a5b33-fdcf-4c68-8965-13853c7f2175" },
+    "author": { "ID":"de2f371a-050d-442a-a380-3b65c785f507" },
     "pageNumber": 333,
     "copyQty": 2,
     "shippedQty": 1,

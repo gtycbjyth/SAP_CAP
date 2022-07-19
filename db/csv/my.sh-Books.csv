@@ -1,0 +1,20 @@
+ID,STATUS,TITLE,AUTHOR,PAGENUMBER,COPYQTY, EUR,PRICE,Author ID
+8,Requested (1),Book,Richard,125,45, EUR,123,Carpenter
+5,Requested (1),Harry Potter and the Order of the Phoenix,Joanne,400,17, EUR,123,Rowling
+14,Requested (1),Horor,Joanne,120,12, EUR,123,Rowling
+1,Requested (1),The Raven,Richard,300,60, EUR,123,Carpenter
+15,Requested (1),Joom,Richard,130,30, EUR,123,Carpenter
+12,Requested (1),Boom,Joanne,120,20, EUR,123,Rowling
+7,Requested (1),Gasolina,Richard,250,212, EUR,123,Carpenter
+3,Requested (1),Harry,Richard,300,35, EUR,123,Carpenter
+16,Requested (1),12,Joanne,1,1, EUR,123,Rowling
+17,Requested (1),New Booook,Richard,200,10, EUR,123,Carpenter
+11,Requested (1),Tooor,Joanne,100,10, EUR,123,Rowling
+4,Requested (1),Harry Potter and the Philosopher's Stone,Joanne,450,33, EUR,123,Rowling
+6,Requested (1),Harry Potter and the Goblet of Fire,Joanne,300,2, EUR,123,Rowling
+16,In Library (0),Tre,Richard,12,112, EUR,123,Carpenter
+10,Requested (1),Reeverro,Richard,123,12, EUR,123,Carpenter
+9,Shipped (2),Book,Richard,120,120, EUR,123,Carpenter
+2,Requested (1),Buratino,Richard,200,13, EUR,123,Carpenter
+13,Requested (1),Groo,Joanne,100,21, EUR,123,Rowling
+18,Shipped (2),Wings,Joanne,200,12, EUR,123,Rowling

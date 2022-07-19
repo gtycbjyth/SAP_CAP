@@ -1,0 +1,4 @@
+Booking ID,Booking Status,Reader Surname,Reader name,Book Name,Booking Start Date,Booking Start Time,Booking End Date,Booking End Time,Book,Changed By,Changed On (UTC),Created By,Created On (UTC),image,Reader,returnTheBookEnabled
+1,Taken (2),Gramovich,Viktoria,The Raven,"Jan 22, 2022",10:15:00 AM,,,The Raven,,,,,,Gramovich,Yes
+2,Available (1),Gramovich,Viktoria,Harry,"Feb 24, 2022",7:56:03 AM,"Feb 24, 2022",7:56:29 AM,Harry,anonymous,"Feb 24, 2022, 7:56:30 AM",anonymous,"Feb 24, 2022, 7:56:03 AM",,Gramovich,
+3,Available (1),Gramovich,Viktoria,Buratino,"Feb 28, 2022",6:55:36 AM,"Feb 28, 2022",6:56:21 AM,Buratino,anonymous,"Feb 28, 2022, 6:56:22 AM",anonymous,"Feb 28, 2022, 6:55:36 AM",,Gramovich,
