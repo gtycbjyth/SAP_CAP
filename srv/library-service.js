@@ -4,7 +4,7 @@ module.exports = srv => {
         const newData = [];
         
         data.forEach(el => {
-            el.title = "Title chenged!!!"
+            // el.title = "Title chenged!!!"
             // newData.push(el); 
         });
         
