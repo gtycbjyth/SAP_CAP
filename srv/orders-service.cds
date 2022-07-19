@@ -1,15 +1,15 @@
 using  my  from '../db/schema';
 
 
-service Orders {
+service OrdersService {
     @readonly
-entity OrderInfo as projection on my.shop.Orders excluding {
-    createdAt,
-    createdBy,
-    modifieAt,
-    modifieBy,
-    book,
-}
+    entity OrderInfo as projection on my.library.Orders excluding {
+        createdAt,
+        createdBy,
+        modifieAt,
+        modifieBy,
+        book,
+    }
 // entity BookStatus as projection on my.shop.BookStatus{
 
 // }

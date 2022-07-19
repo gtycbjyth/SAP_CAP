@@ -7,7 +7,35 @@ GET HTTP://LOCALHOST:4004/catalog/Books
 POST  HTTP://LOCALHOST:4004/catalog/Books
 Content-Type: application/json
 
-{"ID": 10, "title": "THIS IS MY BOOK"}
+{
+    "title": "THIS IS MY BOOK",
+    "author": { "ID":"436a5b33-fdcf-4c68-8965-13853c7f2175" },
+    "pageNumber": 333,
+    "copyQty": 2,
+    "shippedQty": 1,
+    "price": 123,
+    "status": "String",
+    "image": "String",
+    "orderBookEnable": false
+}
+
+###
+POST  HTTP://LOCALHOST:4004/library/Authors
+Content-Type: application/json
+
+{
+    "firstName": "Joanne",
+    "lastName": "Rowling",
+    "birthday": "2021-01-02",
+    "country": "Great Britain"
+}
+
+###
+GET   HTTP://LOCALHOST:4004/catalog/Authors
+# Content-Type: application/json
+
+# {"ID": "f4683950-f77c-4411-968d-2bae5c8b69aa", "book_ID": 421, "quintyti": 10}
+
 
 ###
 POST  HTTP://LOCALHOST:4004/catalog/Orders
