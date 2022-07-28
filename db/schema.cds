@@ -6,7 +6,7 @@ entity Authors: cuid, managed {
     lastName: String;
     birthday: Date;
     country: String;
-    books: Association to many Books on books.author = $self;
+    // books: Association to many Books on books.author = $self;
 }
 
 entity Books: cuid, managed {
@@ -18,7 +18,7 @@ entity Books: cuid, managed {
     image: String;
     orderBookEnable: Boolean;
     status: String;
-    author: Association to Authors; //{ID: "autor_ID"}
+    // author: Association to Authors; //{ID: "autor_ID"}
 }
 
 

@@ -84,3 +84,18 @@ annotate service.Books with @(
         },
     ]
 );
+annotate service.Books with @(
+    UI.Identification : [
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'LibraryService.EntityContainer/test2',
+            Label : '{i18n>Test2}',
+        },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'LibraryService.test',
+            Label : 'test',
+            Determining : true,
+        },
+    ]
+);
