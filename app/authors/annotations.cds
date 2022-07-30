@@ -22,6 +22,11 @@ annotate service.Authors with @(
             Label : 'country',
             Value : country,
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'LibraryService.test2',
+            Label : 'test2',
+        },
     ]
 );
 annotate service.Authors with @(
