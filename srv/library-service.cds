@@ -11,6 +11,10 @@ service LibraryService {
 }
 
 
-// annotate LibraryService.Authors with  @odata.draft.enabled;
+annotate LibraryService.Books with  @odata.draft.enabled;
+annotate LibraryService.Authors with  @odata.draft.enabled;
+annotate LibraryService.Orders with  @odata.draft.enabled;
+annotate LibraryService.Readers with  @odata.draft.enabled;
+annotate LibraryService.Booking with  @odata.draft.enabled;
 // annotate LibraryService.Books with {};
 // annotate LibraryService.Authors with { ID @Core.Computed;};

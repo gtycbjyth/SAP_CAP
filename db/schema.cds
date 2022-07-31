@@ -1,34 +1,38 @@
 namespace my.library;
 using { cuid, managed, Country, Currency } from '@sap/cds/common';
 
-entity Authors: cuid, managed {
+entity Authors: managed {
+    key ID      : UUID  @(Core.Computed : true);
     firstName: String;
     lastName: String;
     birthday: Date;
     country: String;
-    // books: Association to many Books on books.author = $self;
+    books: Association to many Books on books.author = $self;
 }
 
-entity Books: cuid, managed {
+entity Books: managed {
+    key ID      : UUID  @(Core.Computed : true);
     title: String;
     pageNumber: Integer;
-    copyQty: Integer;
-    shippedQty: Integer;
+    // copyQty: Integer;
+    // shippedQty: Integer;
     price: Integer;
-    image: String;
-    orderBookEnable: Boolean;
-    status: String;
-    // author: Association to Authors; //{ID: "autor_ID"}
+    // image: String;
+    // orderBookEnable: Boolean;
+    // status: String;
+    author: Association to Authors; //{ID: "autor_ID"}
 }
 
 
 
-entity Orders: cuid, managed {
+entity Orders: managed {
+    key ID      : UUID  @(Core.Computed : true);
     book: Association to Books;
     quintyti: Integer;
 }
 
-entity Readers: cuid, managed {
+entity Readers: managed {
+    key ID      : UUID  @(Core.Computed : true);
     firstName: String;
     lastName: String;
     birthday: Date;
@@ -38,7 +42,8 @@ entity Readers: cuid, managed {
 }
 
 
-entity Booking: cuid, managed {
+entity Booking: managed {
+    key ID      : UUID  @(Core.Computed : true);
     reader: Association to Readers;
     book: Association to Books;
     bookingStatus: Association to BookStatus;
