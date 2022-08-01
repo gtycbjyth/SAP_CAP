@@ -15,8 +15,9 @@
   },
   "scripts": {
     "start": "cds run",
-    "watch-books": "cds watch --open books/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-authors": "cds watch --open authors/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-library": "cds watch --open library/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-authors": "cds watch --open authors/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-author": "cds watch --open author/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -55,6 +56,11 @@
   },
   "sapux": [
     "app/books",
+    "app/authors",
+    "app/library",
+    "app/authors",
+    "app/library",
+    "app/author",
     "app/authors"
   ]
 }

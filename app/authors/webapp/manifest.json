@@ -1,7 +1,7 @@
 {
     "_version": "1.40.0",
     "sap.app": {
-        "id": "authors.authors",
+        "id": "ns.authors",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -13,7 +13,7 @@
         "sourceTemplate": {
             "id": "@sap/generator-fiori:lrop",
             "version": "1.6.7",
-            "toolsId": "d45a7762-cef5-4e59-b174-8f144fea39e4"
+            "toolsId": "4477b2e5-405d-4c43-9b1b-de73ba517fb2"
         },
         "dataSources": {
             "mainService": {
@@ -37,7 +37,7 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "authors-authors-inbound": {
+                "ns-authors-inbound": {
                     "signature": {
                         "parameters": {},
                         "additionalParameters": "allowed"
@@ -86,7 +86,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "authors.authors.i18n.i18n"
+                    "bundleName": "ns.authors.i18n.i18n"
                 }
             },
             "": {

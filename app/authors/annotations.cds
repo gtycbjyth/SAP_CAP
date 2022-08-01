@@ -1,38 +1,12 @@
 using LibraryService as service from '../../srv/library-service';
 
 annotate service.Authors with @(
-    UI.LineItem : [
-        {
-            $Type : 'UI.DataField',
-            Label : 'firstName',
-            Value : firstName,
+    UI                          : {
+        HeaderInfo : { // добавляет в шапку таблици title и какимто оброзом count (books)
+            TypeName       : 'Authors',
+            TypeNamePlural : 'Authors',
         },
-        {
-            $Type : 'UI.DataField',
-            Label : 'lastName',
-            Value : lastName,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'birthday',
-            Value : birthday,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'country',
-            Value : country,
-        },
-        {
-            $Type : 'UI.DataFieldForAction',
-            Action : 'LibraryService.test2',
-            Label : 'test2',
-        },
-    ]
-);
-annotate service.Authors with @(
-    UI.FieldGroup #GeneratedGroup1 : {
-        $Type : 'UI.FieldGroupType',
-        Data : [
+        LineItem   : [
             {
                 $Type : 'UI.DataField',
                 Label : 'firstName',
@@ -54,16 +28,36 @@ annotate service.Authors with @(
                 Value : country,
             },
         ],
-    },
-    UI.Facets : [
-        {
+     Facets                      : [{
             $Type : 'UI.ReferenceFacet',
             ID : 'GeneratedFacet1',
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup1',
-        },
-    ]
-);
-annotate service.Authors with @(
-    UI.Identification : []
+    }],
+    FieldGroup#GeneratedGroup1 : {
+        $Type : 'UI.FieldGroupType',
+        Data  : [
+             {
+                $Type : 'UI.DataField',
+                Label : 'firstName',
+                Value : firstName,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'lastName',
+                Value : lastName,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'birthday',
+                Value : birthday,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'country',
+                Value : country,
+            },
+        ],
+    },
+    },
 );

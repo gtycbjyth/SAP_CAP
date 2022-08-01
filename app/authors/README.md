@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Thu Jul 28 2022 12:20:58 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Mon Aug 01 2022 10:59:21 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.6.7|
 |**Generation Platform**<br>SAP Business Application Studio|
@@ -9,13 +9,14 @@
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/library/
 |**Module Name**<br>authors|
-|**Application Title**<br>authors|
-|**Namespace**<br>authors|
+|**Application Title**<br>Authors|
+|**Namespace**<br>ns|
 |**UI5 Theme**<br>sap_fiori_3_dark|
 |**UI5 Version**<br>1.102.1|
 |**Enable Code Assist Libraries**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Authors|
+|**Navigation Entity**<br>None|
 
 ## authors
 
