@@ -1,21 +1,57 @@
-namespace my.shop;
-using { cuid, managed } from '@sap/cds/common';
+namespace my.library;
+using { cuid, managed, Country, Currency } from '@sap/cds/common';
 
 
-entity Books {
-    key ID: Integer;
+type Status: String enum {
+    ![In library];
+    Open;
+    Requested;
+    Closed;
+}
+
+entity Library: managed {
+    key ID      : UUID  @(Core.Computed : true);
     title: String;
-    stock: Integer;
-    author: Association to Authors;
+    pageNumber: Integer;
+    copyQty: Integer default 0;
+    shippedQty: Integer default 0;
+    price: Integer;
+    orderBookEnable: Boolean default 'false';
+    currency: Currency;
+    author: Association to Authors; //{ID: "autor_ID"}
+    // orders: Association to BookOrder;
 }
 
-entity Authors {
-    key ID: Integer;
-    name: String;
-    books: Association to many Books on books.author = $self;
-}
-
-entity Orders: cuid, managed {
-    book: Association to Books;
+entity BookOrder: managed {
+    key ID      : UUID  @(Core.Computed : true);
+    // book: Association to Library on book.orders=$self;
     quintyti: Integer;
+    status: Status;
+    localCurrency: Currency default 'BYN';
+}
+
+// entity Booking: managed {
+//     key ID      : UUID  @(Core.Computed : true);
+//     book: Association to Library;
+//     order: Association to BookOrder;
+// }
+
+
+entity Authors: managed {
+    key ID      : UUID  @(Core.Computed : true);
+    firstName: String;
+    lastName: String;
+    birthday: Date;
+    country: String;
+    books: Association to many Library on books.author = $self;
+    }
+
+entity Readers: managed {
+    key ID      : UUID  @(Core.Computed : true);
+    firstName: String;
+    lastName: String;
+    birthday: Date;
+    phone: String;
+    image: String;
+
 }

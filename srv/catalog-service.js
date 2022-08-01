@@ -1,14 +1,14 @@
-module.exports = srv => {
+// module.exports = srv => {
     
-    srv.after('READ', 'Books', data => {
-        const newData = [];
+//     srv.after('READ', 'Books', data => {
+//         const newData = [];
         
-        data.forEach(el => {
-            el.title = "Title chenged!!!"
-            // newData.push(el); 
-        });
+//         data.forEach(el => {
+//             el.title = "Title chenged!!!"
+//             // newData.push(el); 
+//         });
         
-        // data = newData;
-    });
-    console.log(1);
-}
+//         // data = newData;
+//     });
+//     console.log(1);
+// }
