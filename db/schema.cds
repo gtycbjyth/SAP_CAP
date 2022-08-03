@@ -15,7 +15,7 @@ entity Library: managed {
     pageNumber: Integer;
     copyQty: Integer default 0;
     shippedQty: Integer default 0;
-    price: Integer;
+    price: Decimal(9,2);
     orderBookEnable: Boolean default 'false';
     currency: Currency;
     author: Association to Authors; //{ID: "autor_ID"}
@@ -42,7 +42,7 @@ entity Authors: managed {
     firstName: String;
     lastName: String;
     birthday: Date;
-    country: String;
+    country: Country;
     books: Association to many Library on books.author = $self;
     }
 
