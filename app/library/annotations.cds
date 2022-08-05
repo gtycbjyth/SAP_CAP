@@ -92,10 +92,10 @@ annotate service.Library with @(
 annotate LibraryService.Authors with {
     ID @(
         UI.Hidden,
-        // Common : {
-        //     Label : 'First Name',
-        //     Text  : firstName
-        // }
+        Common : {
+            Label : 'Last Name',
+            Text  : lastName
+        }
     );
 }
 

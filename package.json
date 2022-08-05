@@ -16,7 +16,8 @@
   "scripts": {
     "start": "cds run",
     "watch-authors": "cds watch --open authors/webapp/index.html?sap-ui-xx-viewCache=false",
-    "watch-library": "cds watch --open library/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-library": "cds watch --open library/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-bookorder": "cds watch --open bookorder/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -56,6 +57,7 @@
   "sapux": [
     "app/project1",
     "app/authors",
-    "app/library"
+    "app/library",
+    "app/bookorder"
   ]
 }

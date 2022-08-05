@@ -19,15 +19,16 @@ entity Library: managed {
     orderBookEnable: Boolean default 'false';
     currency: Currency;
     author: Association to Authors; //{ID: "autor_ID"}
-    // orders: Association to BookOrder;
+    orders: Association to BookOrder;
 }
 
 entity BookOrder: managed {
     key ID      : UUID  @(Core.Computed : true);
-    // book: Association to Library on book.orders=$self;
+    orderCount: Integer default 1;
+    book: Association to Library;
     quintyti: Integer;
     status: Status;
-    localCurrency: Currency default 'BYN';
+    localCurrency: Currency;
 }
 
 // entity Booking: managed {
