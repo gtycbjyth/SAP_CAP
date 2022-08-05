@@ -10,10 +10,14 @@
     "express": "^4"
   },
   "devDependencies": {
+    "@sap/ux-specification": "^1.102.2",
     "sqlite3": "^5.0.8"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "watch-authors": "cds watch --open authors/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-library": "cds watch --open library/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-bookorder": "cds watch --open bookorder/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -49,5 +53,11 @@
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/project1",
+    "app/authors",
+    "app/library",
+    "app/bookorder"
+  ]
 }
